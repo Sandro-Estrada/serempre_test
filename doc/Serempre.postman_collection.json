@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "b9428338-3567-4355-9b61-be923ff15ddf",
+		"name": "Serempre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/gf-test-81523/us-central1/app/api/user/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TEST UPDATED3\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/gf-test-81523/us-central1/app/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"gf-test-81523",
+						"us-central1",
+						"app",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/gf-test-81523/us-central1/app/api/user/:userId",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TEST UPDATED2\",\r\n    \"password\": \"12345678\",\r\n    \"email\": \"new@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/gf-test-81523/us-central1/app/api/user/:userId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"gf-test-81523",
+						"us-central1",
+						"app",
+						"api",
+						"user",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "555dd75e-31d1-4dfc-a217-baeedba043ac"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/gf-test-81523/us-central1/app/api/user/:userId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/gf-test-81523/us-central1/app/api/user/:userId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"gf-test-81523",
+						"us-central1",
+						"app",
+						"api",
+						"user",
+						":userId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "8zAgg4N4uNagaEzrVqOT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/gf-test-81523/us-central1/app/api/point",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"555dd75e-31d1-4dfc-a217-baeedba043ac\",\r\n    \"quantity\": 5,\r\n    \"reason\": \"good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/gf-test-81523/us-central1/app/api/point",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"gf-test-81523",
+						"us-central1",
+						"app",
+						"api",
+						"point"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/gf-test-81523/us-central1/app/api/point/:userId/update/:pointId",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\": 10,\r\n    \"reason\": \"best\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/gf-test-81523/us-central1/app/api/point/:userId/update/:pointId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"gf-test-81523",
+						"us-central1",
+						"app",
+						"api",
+						"point",
+						":userId",
+						"update",
+						":pointId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "555dd75e-31d1-4dfc-a217-baeedba043ac"
+						},
+						{
+							"key": "pointId",
+							"value": "Ft1cfxA9Vk0gVFDnm4w9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/gf-test-81523/us-central1/app/api/point/:userId/delete/:pointId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/gf-test-81523/us-central1/app/api/point/:userId/delete/:pointId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"gf-test-81523",
+						"us-central1",
+						"app",
+						"api",
+						"point",
+						":userId",
+						"delete",
+						":pointId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": "555dd75e-31d1-4dfc-a217-baeedba043ac"
+						},
+						{
+							"key": "pointId",
+							"value": "ntWjsL4MSyMvPodgkaG7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
