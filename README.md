@@ -24,3 +24,22 @@ Para correr el proyecto ingresar a la carpeta **functions** desde la terminal y 
 
 ## Documentación
 Anexado al proyecto se encuentra la colección de la herramienta **Postman** con los endpoints del REST API.
+
+## Estructura del proyecto
+|--/doc                         #Documentación de endpoints en postman
+|--/functions                   #funciones de firebase
+|---/controllers                #Controladores de las funciones
+|----point.js                   #Contiene la lógica del controlador de point
+|----user.js                    #Contiene la lógica del controlador de user
+|---/lib                        #Librerías de uso general
+|----/controllers               #Contiene la lógica de controladores de errores
+|-----ErrorController.js        #Controlador de errores
+|----/utils                     #Contiene funciones de utilería
+|-----index.js                  #Funciones de utilería
+|----/validators                #Contiene los esquemas de las colecciones para poder validar sus valores
+|-----PointValidator.js         #Contiene el esquema de validación de Point
+|-----UserValidator.js          #Contiene el esquema de validación de User
+|---/routes                     #Rutas de acceso de los endpoints
+|----point.js                   #Rutas de point
+|----user.js                    #Rutas de user
+|---index.js                    #Punto de arranque de las funciones
